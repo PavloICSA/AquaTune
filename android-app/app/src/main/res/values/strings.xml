@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">AquaTune</string>
+    <string name="app_motto">Точне налаштування хімії води для розумного обприскування</string>
+    
+    <!-- Navigation -->
+    <string name="calculator">Калькулятор</string>
+    <string name="why_aquatune">Навіщо AquaTune?</string>
+    <string name="about">Про додаток</string>
+    <string name="instructions">Інструкції</string>
+    <string name="download">Завантажити</string>
+    
+    <!-- Input fields -->
+    <string name="volume_l">Об\'єм бака (L)</string>
+    <string name="initial_ph">Початковий pH</string>
+    <string name="target_ph">Цільовий pH</string>
+    <string name="alkalinity">Алкалінність</string>
+    <string name="temperature">Температура (°C)</string>
+    <string name="fertilizer_purity">Чистота добрив (%)</string>
+    
+    <!-- Placeholders -->
+    <string name="volume_placeholder">1000</string>
+    <string name="initial_ph_placeholder">8.0</string>
+    <string name="target_ph_placeholder">5.8</string>
+    <string name="alkalinity_placeholder">150</string>
+    <string name="temperature_placeholder">25</string>
+    <string name="fertilizer_purity_placeholder">95</string>
+    
+    <!-- Sections -->
+    <string name="required_parameters">Обов\'язкові параметри</string>
+    <string name="additional_parameters">Додаткові параметри (експертний режим)</string>
+    <string name="optional_parameters">Опціональні параметри для підвищення точності розрахунків</string>
+    <string name="effect_timing">Швидкість дії</string>
+    <string name="when_needed">Коли потрібен ефект підкислення?</string>
+    <string name="available_fertilizers">Доступні кислотні добрива</string>
+    <string name="select_fertilizers">Оберіть добрива та вкажіть їх кількість</string>
+    
+    <!-- Effect timing -->
+    <string name="immediate">Миттєво</string>
+    <string name="within_24h">Протягом доби</string>
+    <string name="no_rush">Не поспішаю</string>
+    <string name="immediate_desc">Під час обприскування (хвилини)</string>
+    <string name="within_24h_desc">12-24 години</string>
+    <string name="no_rush_desc">24-72 години (нітрифікація)</string>
+    
+    <!-- Units and labels -->
+    <string name="recommended">Рекомендовано: 5.5-6.0</string>
+    <string name="alkalinity_unit">мг/л як CaCO₃</string>
+    
+    <!-- Actions -->
+    <string name="calculate">Розрахувати</string>
+    <string name="calculating">Розрахунок...</string>
+    <string name="clear">Очистити</string>
+    
+    <!-- Results -->
+    <string name="calculation_results">Результати наукового розрахунку</string>
+    <string name="main_recommendation">Основна рекомендація</string>
+    <string name="alternative_recommendation">Альтернативна рекомендація</string>
+    <string name="recommended_fertilizers">Рекомендовані добрива</string>
+    <string name="total_cost">Загальна вартість</string>
+    <string name="final_ph">Кінцевий pH</string>
+    <string name="time_to_effect">Час до ефекту</string>
+    <string name="warnings">Попередження та заходи безпеки</string>
+    <string name="jar_test_instructions">Інструкції для Jar-Test</string>
+    <string name="explanation">Пояснення</string>
+    <string name="scientific_reasoning">Наукове обґрунтування</string>
+    
+    <!-- About section -->
+    <string name="about_title">Про науковий калькулятор</string>
+    <string name="methodology">Методологія</string>
+    <string name="scientific_basis">Наукова основа</string>
+    <string name="key_features">Ключові особливості</string>
+    <string name="accurate_calculations">Точні розрахунки</string>
+    <string name="safety">Безпека</string>
+    <string name="scientific_base">Наукова база</string>
+    
+    <!-- Instructions -->
+    <string name="instructions_title">Інструкції з використання</string>
+    <string name="safety_protocols">Протоколи безпеки</string>
+    <string name="step_by_step">Покрокова інструкція</string>
+    
+    <!-- Fertilizer names -->
+    <string name="map">Монофосфат амонію (MAP)</string>
+    <string name="dap">Діамонійфосфат (DAP)</string>
+    <string name="asam">Сульфат амонію</string>
+    <string name="asn">Сульфонітрат амонію</string>
+    <string name="an">Аміачна селітра</string>
+    <string name="npk">NPK комплексне добриво</string>
+    
+    <!-- Currency -->
+    <string name="currency_uah">грн</string>
+    <string name="per_kg">грн/кг</string>
+    
+    <!-- Form labels -->
+    <string name="formula">Формула:</string>
+    <string name="price">Ціна:</string>
+    <string name="benefits">Переваги:</string>
+    <string name="available_amount">Доступна кількість (кг)</string>
+    <string name="available_amount_kg">кг</string>
+    
+    <!-- Accessibility -->
+    <string name="expert_mode_toggle">Експертний режим</string>
+    <string name="expert_mode">Експертний режим</string>
+    <string name="simple_mode">Простий режим</string>
+    
+    <!-- Footer -->
+    <string name="developed_for">Розроблено для українських фермерів з турботою про ефективність та безпеку сільського господарства</string>
+    <string name="icon_attribution">Іконки обприскувачів створені Ndut_Design - Flaticon</string>
+    <string name="version">Версія 2.0 - Наукова</string>
+</resources>

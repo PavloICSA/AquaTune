@@ -1,0 +1,32 @@
+{
+  "name": "fertilizer-calculator",
+  "version": "1.0.0",
+  "description": "Fertilizer Calculator - Web and Android applications",
+  "private": true,
+  "workspaces": [
+    "web-app"
+  ],
+  "scripts": {
+    "web:dev": "cd web-app && npm run dev",
+    "web:build": "cd web-app && npm run build",
+    "web:preview": "cd web-app && npm run preview",
+    "android:debug": "cd android-app && gradlew assembleDebug",
+    "android:release": "cd android-app && gradlew assembleRelease",
+    "install:web": "cd web-app && npm install",
+    "clean": "rimraf web-app/dist web-app/node_modules android-app/build android-app/.gradle"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.0"
+  },
+  "keywords": [
+    "fertilizer",
+    "calculator",
+    "agriculture",
+    "farming",
+    "react",
+    "android",
+    "kotlin"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

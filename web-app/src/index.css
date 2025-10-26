@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-lexend {
+    font-family: 'Lexend', sans-serif;
+  }
+  
+  .font-arial {
+    font-family: 'Arial', sans-serif;
+  }
+}
+
+@layer base {
+  html {
+    font-family: 'Lexend', 'Arial', sans-serif;
+    font-size: min(3vw, 16px);
+  }
+
+  body {
+    @apply bg-gradient-to-br from-white via-slate-50 to-gray-100 text-slate-900 font-lexend;
+  }
+
+  /* Make all text fluid by default */
+  h1 { font-size: min(6vw, 32px); font-family: 'Lexend', sans-serif !important; }
+  h2 { font-size: min(5vw, 28px); font-family: 'Lexend', sans-serif !important; }
+  h3 { font-size: min(4vw, 24px); font-family: 'Lexend', sans-serif !important; }
+  h4 { font-size: min(3.5vw, 20px); font-family: 'Lexend', sans-serif !important; }
+  h5 { font-size: min(3vw, 18px); font-family: 'Lexend', sans-serif !important; }
+  h6 { font-size: min(2.5vw, 16px); font-family: 'Lexend', sans-serif !important; }
+  p, span, div, label, li, button, input, textarea, select { font-size: min(3vw, 16px); font-family: 'Arial', sans-serif !important; }
+  small, .text-xs { font-size: min(2.5vw, 12px); font-family: 'Arial', sans-serif !important; }
+  .text-sm { font-size: min(2.5vw, 14px); font-family: 'Arial', sans-serif !important; }
+  .text-lg { font-size: min(4vw, 18px); font-family: 'Arial', sans-serif !important; }
+  .text-xl { font-size: min(4.5vw, 20px); font-family: 'Arial', sans-serif !important; }
+  .text-2xl { font-size: min(5vw, 24px); font-family: 'Arial', sans-serif !important; }
+  .text-3xl { font-size: min(6vw, 30px); font-family: 'Arial', sans-serif !important; }
+  
+  /* Ensure specific elements use correct fonts */
+  * {
+    font-family: inherit;
+  }
+  
+  /* Override for headings to use Lexend */
+  .font-lexend, .font-lexend * {
+    font-family: 'Lexend', sans-serif !important;
+  }
+  
+  /* Override for body text to use Arial */
+  .font-arial, .font-arial * {
+    font-family: 'Arial', sans-serif !important;
+  }
+  
+  /* Ensure pre and code elements use monospace but can be overridden */
+  pre, code {
+    font-family: 'Courier New', monospace;
+  }
+  
+  pre.font-arial, code.font-arial {
+    font-family: 'Arial', sans-serif !important;
+  }
+}
+
+@layer components {
+  .input-field {
+    @apply w-full px-4 py-3 border-2 border-slate-300 rounded-lg shadow-sm bg-white font-arial;
+    @apply focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-lime-500;
+    @apply transition-all duration-200 hover:border-blue-400;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  }
+
+  .btn-primary {
+    @apply text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 font-lexend;
+    @apply focus:outline-none focus:ring-2 focus:ring-lime-500 focus:ring-offset-2;
+    @apply transform hover:scale-105 active:scale-95;
+    background: linear-gradient(135deg, #84cc16 0%, #65a30d 100%);
+    box-shadow: 0 4px 15px rgba(132, 204, 22, 0.3);
+  }
+
+  .btn-primary:hover {
+    background: linear-gradient(135deg, #65a30d 0%, #4d7c0f 100%);
+    box-shadow: 0 6px 20px rgba(132, 204, 22, 0.4);
+  }
+
+  .btn-secondary {
+    @apply text-slate-700 font-medium py-3 px-6 rounded-lg transition-all duration-300 font-lexend;
+    @apply focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2;
+    @apply transform hover:scale-105 active:scale-95;
+    background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+    box-shadow: 0 4px 15px rgba(71, 85, 105, 0.2);
+  }
+
+  .btn-secondary:hover {
+    background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+    box-shadow: 0 6px 20px rgba(71, 85, 105, 0.3);
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 font-lexend;
+  }
+
+  .btn-circle {
+    @apply rounded-full w-12 h-12 p-0;
+  }
+
+  .btn-outline {
+    @apply border-2 bg-transparent rounded-lg;
+    border-color: var(--btn-color, #475569);
+    color: var(--btn-color, #475569);
+    background: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(248,250,252,0.8) 100%);
+  }
+
+  .btn-outline:hover {
+    background: linear-gradient(135deg, rgba(132, 204, 22, 0.1) 0%, rgba(101, 163, 13, 0.1) 100%);
+    transform: scale(1.05);
+  }
+
+  .card {
+    @apply rounded-xl shadow-lg p-6 border border-slate-200 font-arial;
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    backdrop-filter: blur(10px);
+  }
+
+  .card-header {
+    @apply font-bold text-slate-900 mb-3 font-lexend;
+    font-size: min(4vw, 24px);
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-subtitle {
+    @apply text-slate-600 mb-4 font-arial;
+    font-size: min(3vw, 16px);
+  }
+
+  /* Special class for AquaTune title */
+  .aquatune-title {
+    font-size: 96px !important;
+    font-weight: 900 !important;
+    font-family: 'Arial Black', Arial, sans-serif !important;
+    line-height: 1 !important;
+  }
+
+  .aquatune-title span {
+    font-size: 96px !important;
+    font-weight: 900 !important;
+    font-family: 'Arial Black', Arial, sans-serif !important;
+  }
+
+  /* Gradient backgrounds for sections */
+  .gradient-lime-blue {
+    background: linear-gradient(135deg, #ecfdf5 0%, #dbeafe 100%);
+  }
+
+  .gradient-blue-slate {
+    background: linear-gradient(135deg, #dbeafe 0%, #f1f5f9 100%);
+  }
+
+  .gradient-slate-white {
+    background: linear-gradient(135deg, #f1f5f9 0%, #ffffff 100%);
+  }
+
+  .gradient-lime-white {
+    background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 100%);
+  }
+
+  /* Ensure consistent fonts in results sections */
+  .calculation-results * {
+    font-family: inherit !important;
+  }
+  
+  .calculation-results h1, 
+  .calculation-results h2, 
+  .calculation-results h3, 
+  .calculation-results h4, 
+  .calculation-results h5, 
+  .calculation-results h6 {
+    font-family: 'Lexend', sans-serif !important;
+  }
+  
+  .calculation-results p, 
+  .calculation-results span, 
+  .calculation-results div:not(.font-lexend), 
+  .calculation-results li, 
+  .calculation-results pre {
+    font-family: 'Arial', sans-serif !important;
+  }
+}
